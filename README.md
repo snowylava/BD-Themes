@@ -1,4 +1,3 @@
-# BD-Themes
-BetterDiscord Themes
+# BetterDiscord Themes by Katana
 
-README.md will soo be edited
+README.md will soon be edited
