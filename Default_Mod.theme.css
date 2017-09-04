@@ -1,7 +1,9 @@
-//META { "name": "Default (Mod)", "description": "Default Discord Theme, with a few extras changes.", "author": "Phil (Katana)", "version": "1.0" }*//{}
+//META { "name": "Default (Mod)", "description": "Default Discord Theme, with a few extras changes.", "author": "Phil (Katana)", "version": "1.1" }*//{}
 
 /* Change Log
 v 1.0 - First Release
+v 1.1 - Added more Rainbow keyframes to Theme Version, DevilBro's ReadAllNotificationButton Plugin, Online Friends,
+		and attempted guild selector.
 v x.x - text_goes_here
 */
 
@@ -16,7 +18,8 @@ v x.x - text_goes_here
 	/* Others */
   --Color-red: 255,133,160;
   --Color-green: 160,255,133;
-  --theme-version: "Default v1.0 by Katana";
+  
+  --theme-version: "Default v1.1 by Katana";
 }
 
 #bd-settings-sidebar>span>span::after{
@@ -24,7 +27,9 @@ v x.x - text_goes_here
     display:block;
     padding-top:5px;
     margin-bottom:-10px;
+	color: rgba(var(--Color-red), 1);
     content: var(--theme-version);
+	animation: var(--rainbow-anim);
 }
 /* Public Listing */
 #bd-pub-li {
@@ -99,6 +104,25 @@ v x.x - text_goes_here
 	padding:18px 20px 85px 15px;
 }
 
+.guilds-wrapper .guilds .guild .selected {
+	background-color: rgba(var(--Color-blue), 1);
+	border-color: rgba(var(--Color-blue), 1);
+	color: rgba(var(--Color-blue), 1);
+	animation: var(--rainbow-anim);
+}
+#RANbutton-frame {
+	height:20px;
+	margin-bottom:10px;
+	padding:1.5px;
+}
+#RANbutton {
+	color: rgba(var(--Color-blue), 1);
+	animation: var(--rainbow-anim);
+}
+.guilds-wrapper .guilds .friends-online {
+	color: rgba(var(--Color-red), 1);
+	animation: var(--rainbow-anim);
+}
 /* Connecting screen - may not show */
 .connecting
 {
