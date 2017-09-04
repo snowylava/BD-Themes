@@ -3,6 +3,7 @@
 Default (Mod)
 ===================
 Thanks for choosing my themes. (<i class="icon-file"></i> **Default (Mod)**) is basic, but I'm sure more complex, better looking ones will come by soon.
+Looks a lot better with Discord's Dark Theme pre-selected.
 > ****Default (Mod)** Features:**
 
 > - Title Bar with Logo
@@ -17,13 +18,16 @@ Preview
 
 ExotiCNova
 ===================
- My first theme is a Dark Theme with the ability to add your own background if you choose so. Built-in Theme Fixer by Gimo.
+My first theme is a Dark Theme with the ability to add your own background if you choose so. Built-in Theme Fixer by Gimo.
+Looks a lot better with Discord's Dark Theme pre-selected.
 > ****ExotiCNova** Features:**
 
 > - Change-able background
 > - When clicking on a picture in chat, the background blurs
+> - Removed Public Listing Button
 
 Preview
 -------------
+    (Outdated Preview)
 ![enter image description here](http://www.exoticmods.us/img/github/BD-Themes/Capture2.PNG)
 Please Note this is my first theme, its buggy and since Discord changes code, it may not be up to date when you download it.
