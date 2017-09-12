@@ -1,9 +1,10 @@
-//META { "name": "Default (Mod)", "description": "Default Discord Theme, with a few extras changes.", "author": "Phil (Katana)", "version": "1.1" }*//{}
+//META { "name": "Default (Mod)", "description": "Default Discord Theme, with a few extras changes.", "author": "Phil (Katana)", "version": "1.2" }*//{}
 
 /* Change Log
 v 1.0 - First Release
 v 1.1 - Added more Rainbow keyframes to Theme Version, DevilBro's ReadAllNotificationButton Plugin, Online Friends,
 		and attempted guild selector.
+v 1.2 - Fixed the user popout background color to match Discord's Dark Theme
 v x.x - text_goes_here
 */
 
@@ -19,7 +20,7 @@ v x.x - text_goes_here
   --Color-red: 255,133,160;
   --Color-green: 160,255,133;
   
-  --theme-version: "Default v1.1 by Katana";
+  --theme-version: "Default v1.2 by Katana";
 }
 
 #bd-settings-sidebar>span>span::after{
@@ -237,7 +238,7 @@ v x.x - text_goes_here
     margin-left: 5px;
 }
 
-.channel.channel-voice li.speaking .avatar-small[style*="a_"] {
+.channel .channel-voice li.speaking .avatar-small[style*="a_"] {
     border-color: #fc964b;
 }
 
@@ -277,6 +278,7 @@ v x.x - text_goes_here
     height:20px;
     width:80px
 }
+
 .win-buttons button
 {
     height:33px!important;
@@ -296,11 +298,11 @@ v x.x - text_goes_here
 }
 .app
 {
-    margin-top:35px
+    margin-top:30px;
 }
 .separator-win
 {
-    display:none
+    display:none;
 }
 
 /* Radial Status by Zerebos */
@@ -422,4 +424,37 @@ v x.x - text_goes_here
 .channel-members .member, #user-profile-modal .guilds .guild {
 	padding-bottom: calc((var(--rs-spacing) + var(--rs-width))*2) !important;
 	padding-top: calc((var(--rs-spacing) + var(--rs-width))*2) !important;
+}
+
+/* user popout */
+.userPopout-4pfA0d {
+	background-color: #2f3136;
+}
+.headerActivityText-3qBQRo>strong {
+	color: rgba(var(--Color-green), 1);
+}
+.body-3rkFrF {
+	background-color: #42454b;
+}
+.member-role .member-role-add {
+	color: #fff;
+	background-color: #565961;
+	border-color: #6f737d;
+}
+.footer-2J5zqP {
+	background-color: #42454b;
+}
+.footer-2J5zqP .quickMessage-28pD5Y {
+	background-color: #565961;
+	border-color: #6f737d;
+}
+.autocomplete-popout .scrollerWrap-fzNley .autocomplete-scroller {
+	background-color: #42454b;
+}
+.autocomplete-popout .scrollerFade-28dRsO .autocomplete-scroller {
+	background-color: #565961;
+}
+
+.avatarHintInner-1JYcVr {
+	color: rgba(var(--Color-red) ,1);
 }
