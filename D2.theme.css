@@ -1,0 +1,321 @@
+//META { "name": "Destiny 2 Theme", "description": "Just a very simple Destiny 2 Theme", "author": "Phil (Katana)", "version": "0.0.1" }*//{}
+
+/* Change Log
+v 0.0.1 - First Release
+*/
+:root {
+	--rainbow-anim: rainbow 30s infinite linear;
+	--color-red: 255, 0, 0 ;
+	--color-purple: 133, 0, 255 ;
+	--color-magenta: 255, 0, 255 ;
+	--color-blue: 0, 0, 255 ;
+	--color-cyan: 0, 255, 255 ;
+	--color-green: 0, 255, 0 ;
+	--color-yellow: 255, 255, 0 ;
+	--color-orange: 255, 133, 0 ;
+	--color-Discord-dark-1: 54, 57, 62 ; /*lighter grey*/
+	--color-Discord-dark-2: 47, 49, 54 ; /*medium grey*/
+	--color-Discord-dark-3: 30, 33, 36 ; /*darkerr grey*/
+	--color-Discord-purple: 114, 137, 218;
+	
+	--theme-version: "Destiny 2 by Katana";
+}
+
+/* Theme Fixer by Gimo */
+@import url(https://rawgit.com/GimoTheBeast/Discord-Theme-Fixes/master/fixesImport/fixesClean.css);
+
+#bd-settings-sidebar>span>span::after{
+    padding-left:10px;
+    display:block;
+    padding-top:5px;
+    margin-bottom:-10px;
+	color: rgba(var(--color-red), 1);
+    content: var(--theme-version);
+	animation: var(--rainbow-anim);
+}
+/* Public Listing */
+#bd-pub-li {
+	visibility:hidden;
+	height: 20px;
+	}
+	/* rainbow effect */
+@keyframes rainbow 
+{
+	from { -webkit-filter: hue-rotate(0deg); }
+	to { -webkit-filter: hue-rotate(360deg); }
+}
+
+/* fix flickers */
+html, span:not(.spinner-item) 
+{
+	backface-visibility: hidden;
+}
+
+/* App Background */
+.layers, .layer {
+  background: transparent !important;
+}
+
+.app {
+	background-image:url("http://go.exoticmods.us/d2") !important;
+	background-size: 1920px 1080px;
+	/*background:url(https://i.imgur.com/hn0WYsV.jpg) !important;*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+}
+.callout-backdrop {/* This is the Blured Background when you click on a picture */
+	/* I do not know which one would work, so I put all browsers here */
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+	background: transparent;
+	background-size: cover;
+}
+
+.links,
+.chat,
+.typing,
+.content,
+#friends,
+.search-bar,
+.header-toolbar,
+.friends-header,
+.friends-table,
+.friends-table-header,
+.scroller-wrap,
+.guild-channels,
+.private-channels,
+.guild-header header,
+.divider-red span,
+.messages-wrapper,
+#voice-connection {
+	background: transparent !important;
+}
+
+/* Server list area */
+.guilds-wrapper { background:rgba(0,0,0,0.3) !important }
+
+/* Channels list area */
+.channels-wrap { background:rgba(0,0,0,0.4) !important }
+
+/* Chat area & friends table */
+.content .flex-spacer, #friends { background:rgba(0,0,0,0.6) !important }
+.divider>span { 
+	background-color:rgba(0,0,0,0.35) !important;
+	color: #999 !important;
+}
+.divider>div { background-color:#000 !important }
+
+/* friends-header & title wrap area */
+.title-wrap, .title-wrap-dark { background:rgba(0,0,0,0.4) !important }
+
+/* User list area */
+.channel-members { background:rgba(0,0,0,0.4) !important }
+
+/* Remove the background image block */
+.layers { background: transparent !important; }
+
+/* Smaller Server Icons */
+.guilds-wrapper .guilds-error {
+	width:40px;
+	height:40px;
+	line-height:36px;
+}
+.guilds-wrapper .guilds .guild .guild-inner a,
+.guilds-wrapper .guilds .guild,
+.guilds-wrapper .guilds .guild .avatar-small {
+	width:40px;
+	height:40px;
+}
+
+.guilds-wrapper .guilds .guild .avatar-small {
+	width:40px;
+	height:40px;
+	background-size: 40px 40px;
+}
+
+.guilds-wrapper .guilds .guild .guild-inner {
+	line-height:40px;
+}
+
+.guilds-wrapper .guilds .friends-icon {
+	width:40px;
+	height:40px;
+	background-size:25px 19px;
+}
+
+.guilds-wrapper .guilds .friends-icon {
+    background-color: rgba(0,0,0,0.3) !important;
+    background-image: none !important;
+    padding-top:0px;
+}
+
+.guilds-wrapper .guilds .friends-icon:after {
+    display:block;
+    width:40px;
+    height:40px;
+    content:'';
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/36099136250239.5715692db1631.gif) !important;
+    background-size:110%;
+    background-repeat:no-repeat;
+    background-position:top center;
+}
+
+.guilds-wrapper .guilds .guild.audio .guild-inner:after {
+	background-size:12px;
+	background-color:rgba(0,0,0,0.8);
+}
+
+.guilds-wrapper .guilds .guild:before,
+.guilds-wrapper .guilds .guild.unread:before,
+.guilds-wrapper .guilds .guild.selected:before {
+	left:-19px;
+	transition:0.2s ease-in-out all;
+}
+
+.guilds-wrapper .guilds {
+	padding:18px 20px 85px 15px;
+}
+
+/* user popout */
+.userPopout-4pfA0d {
+	background-color: #2f3136;
+}
+.body-3rkFrF {
+	background-color: #42454b;
+}
+.member-role .member-role-add {
+	color: #fff;
+	background-color: #565961;
+	border-color: #6f737d;
+}
+.footer-2J5zqP {
+	background-color: #42454b;
+}
+.footer-2J5zqP .quickMessage-28pD5Y {
+	background-color: #565961;
+	border-color: #6f737d;
+}
+.autocomplete-popout .scrollerWrap-fzNley .autocomplete-scroller {
+	background-color: #42454b;
+}
+.autocomplete-popout .scrollerFade-28dRsO .autocomplete-scroller {
+	background-color: #565961;
+}
+
+.avatarHintInner-1JYcVr {
+	color: rgba(var(--color-red) ,1);
+}
+
+/* BOT tag */
+.bot-tag 
+{
+	background: rgba(var(--color-blue), 1);
+	animation: var(--rainbow-anim);
+	font-size: 10px;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 1);
+	margin-left: 5px;
+	padding: 1px 2px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	vertical-align: bottom;
+	line-height: 16px;
+	flex-shrink: 0;
+}
+/* Rainbow Owner Tag (only works if you have the Owner Tag Plugin) */
+.kawaii-tag {
+	background: rgba(var(--color-blue), 1);
+	animation: var(--rainbow-anim);
+	font-size: 10px;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 1);
+	margin-left: 5px;
+	padding: 1px 2px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	vertical-align: bottom;
+	line-height: 16px;
+	flex-shrink: 0;
+}
+
+div>*:not(code) {
+    font-family: 'Karla',Whitney,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif !important;
+}
+
+textarea {
+	background:transparent !important;
+}
+
+.scroller-wrap .scroller::-webkit-scrollbar-thumb {
+	border:3px solid rgba(255,255,255,0) !important;
+	background-color:#1D6586 !important;
+}
+
+.scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+	border:3px solid rgba(255,255,255,0) !important;
+	background-color:rgba(0,0,0,0.3) !important;
+}
+
+/* BetterFont Toolbar Plugin change */
+.bf-toolbar:before, .bf-hover:before {
+	background-color: rgba(0, 0, 0, 0.8)!important;
+}
+
+/* Title bar */
+.titlebar
+{
+    background: #7289da;
+    height:25px!important;
+}
+.titlebar:before {
+    font-family: Verdana ;
+    font-size:16pt;
+	color: #FFF;
+	animation: var(--rainbow-anim);
+	padding-top:10px;
+	padding-left:15px;
+	content: "Destiny 2™";
+    opacity: .25;
+}
+.win-buttons button
+{
+    height:20px!important;
+    width:25px!important;
+    background-size: 25px;
+    background-repeat:no-repeat;
+}
+
+.win-buttons
+{
+    height:25px;
+    right:0px;
+}
+.win-buttons.win-buttons-notice
+{
+    top:0!important
+}
+.app
+{
+    margin-top:23px;
+}
+.separator-win
+{
+    display:none;
+}
+.context-menu { background-color: rgba(0,0,0,0.6) !important; }
+.item-group, .item {
+	background-color: rgba(0,0,0,0.4) !important;
+}
+.item:hover {
+	color: rgb(var(--color-Discord-purple)) !important;
+}
+code {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+}
+pre {
+	background-color: rgba(0, 0, 0, 0.0) !important;
+}
