@@ -1,6 +1,6 @@
 # BetterDiscord Themes by Katana
 
-Default (Mod)
+Destiny 2™ Theme
 ===================
 Destiny 2 Theme with a GIF as the main background, custom colors, and more coming soon.
 Looks a lot better with Discord's Dark Theme pre-selected.
