@@ -2,6 +2,22 @@
 
 Default (Mod)
 ===================
+Destiny 2 Theme with a GIF as the main background, custom colors, and more coming soon.
+Looks a lot better with Discord's Dark Theme pre-selected.
+> ****Destiny 2™ Theme** Features:**
+
+> - Title Bar
+> - Rainbow keyframes on Owner Plugin and Bot Tag
+> - Destiny 2 GIF background
+> - Smaller Server icons, works great with 2 & 3 column server grid
+> - You may need Gimo's Theme Fixer for this to look better - https://github.com/GimoTheBeast/Discord-Theme-Fixes
+
+Preview
+-------------
+![enter image description here](http://www.exoticmods.us/img/github/BD-Themes/Capture3.PNG)
+
+Default (Mod)
+===================
 Thanks for choosing my themes. (<i class="icon-file"></i> **Default (Mod)**) is basic, but I'm sure more complex, better looking ones will come by soon.
 Looks a lot better with Discord's Dark Theme pre-selected.
 > ****Default (Mod)** Features:**
