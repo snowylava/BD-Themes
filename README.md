@@ -32,9 +32,9 @@ Preview
 -------------
 ![enter image description here](http://www.exoticmods.us/img/github/BD-Themes/Capture1.PNG)
 
-ExotiCNova
+ExotiCNova (Dark Matter)
 ===================
-My first theme is a Dark Theme with the ability to add your own background if you choose so. Built-in Theme Fixer by Gimo.
+Dark Matter Theme with the ability to add your own background if you choose so. Built-in Theme Fixer by Gimo.
 Looks a lot better with Discord's Dark Theme pre-selected.
 > ****ExotiCNova** Features:**
 
@@ -46,4 +46,4 @@ Preview
 -------------
     (Outdated Preview)
 ![enter image description here](http://www.exoticmods.us/img/github/BD-Themes/Capture2.PNG)
-Please Note this is my first theme, its buggy and since Discord changes code, it may not be up to date when you download it.
+Please Note this is an older theme, its buggy and since Discord changes code, it may not be up to date when you download it.
